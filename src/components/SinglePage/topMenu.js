@@ -8,6 +8,9 @@ const menuItems = [
 class TopMenu extends React.Component {
     render() {
         let theme = this.context;
+        // if(theme.theme.className === 'dark') {
+        //     throw new Error('I crashed!');
+        // }
         return (
             <ul className={'topMenu '+theme.theme.className}>
                 {menuItems.map((menuItem) =>

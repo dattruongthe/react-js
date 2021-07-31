@@ -6,6 +6,7 @@ import MainContent from "./mainContent";
 import ThemeSwitch from "./themeSwitch";
 import {ThemeContext, themes} from "./themeContext";
 import './singlePage.css';
+import ErrorBoundary from "../ErrorBoundary/errorBoundary";
 
 class SinglePage extends React.Component {
     constructor(props) {
@@ -25,7 +26,9 @@ class SinglePage extends React.Component {
             <div className={'singlePage'}>
                 <ThemeContext.Provider value={this.state}>
                     <ThemeSwitch />
-                    <TopMenu />
+                    <ErrorBoundary>
+                        <TopMenu />
+                    </ErrorBoundary>
                     <Slider />
                     <div className='wrapper'>
                         <Sidebar />

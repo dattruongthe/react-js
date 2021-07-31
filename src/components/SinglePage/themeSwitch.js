@@ -6,7 +6,7 @@ class ThemeSwitch extends React.Component {
         return (
             <ThemeContext.Consumer>
                 {({theme, switchTheme}) => (
-                    <button onClick={switchTheme}>{console.log(switchTheme)}Switch Theme</button>
+                    <button onClick={switchTheme}>Switch Theme</button>
                 )}
             </ThemeContext.Consumer>
 
