@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
-import SinglePage from "./components/SinglePage/singlePage";
-
+import CommentList from "./components/Blog/commentList";
+import BlogPostWithDataSource from "./components/Blog/blogPost";
 function App() {
     return (
-        <SinglePage />
+        <>
+            <CommentList />
+            <BlogPostWithDataSource />
+        </>
     );
 }
 
