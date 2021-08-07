@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import CommentList from "./components/Blog/commentList";
-import BlogPostWithDataSource from "./components/Blog/blogPost";
+import Form from "./components/Hook/form";
+
 function App() {
     return (
         <>
-            <CommentList />
-            <BlogPostWithDataSource />
+            <Form />
         </>
     );
 }
